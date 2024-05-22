@@ -31,6 +31,8 @@ const deleteButtonStyle = [
 const tableDataStyle = ["space-x-10", "p-3", "text-center"];
 //
 
+
+
 let students;
 
 if (localStorage.getItem("My_Object" == null)) {
@@ -72,7 +74,7 @@ function saveToLocalStorage(students) {
   let stringified = JSON.stringify(students);
   localStorage.setItem("My_Object", stringified);
 }
-
+//rendering student details
 function updateTable(students) {
   tableBody.innerHTML = "";
   students.map((eachStudent, index) => {
